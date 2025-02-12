@@ -1,8 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./google/ui.html",
-    "./microsoft/ui.html",
+    "./Google/ui.html",
+    "./Microsoft/ui.html",
+    "./Instagram/ui.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
