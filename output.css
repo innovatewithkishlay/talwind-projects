@@ -786,6 +786,26 @@ video {
   left: 260px;
 }
 
+.right-\[110px\] {
+  right: 110px;
+}
+
+.right-\[120px\] {
+  right: 120px;
+}
+
+.right-\[170px\] {
+  right: 170px;
+}
+
+.left-\[20px\] {
+  left: 20px;
+}
+
+.left-\[160px\] {
+  left: 160px;
+}
+
 .m-2 {
   margin: 0.5rem;
 }
