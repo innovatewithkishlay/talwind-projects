@@ -12,7 +12,7 @@
     />
   </head>
   <body>
-    <div class="flex flex-col min-h-screen">
+    <div class="flex flex-col h-screen m-0">
       <header class="flex justify-between">
         <div class="flex space-x-5 ml-6 pt-4">
           <a href="" class="hover:underline decoration-1">About</a>
@@ -66,11 +66,12 @@
         />
         <input
           type="text"
-          class="rounded-full w-[650px] h-12 px-4 border border-gray-300 shadow-md shadow-black/20 focus:outline-none ring-1 ring-black/10"
+          class="rounded-full w-full max-w-[650px] h-12 px-4 border border-gray-300 shadow-md shadow-black/20 focus:outline-none ring-1 ring-black/10"
         />
+
         <div class="relative flex">
           <svg
-            class="absolute right-[295px] bottom-[13px]"
+            class="absolute right-[280px] sm:right-[295px] bottom-[13px]"
             xmlns="http://www.w3.org/2000/svg"
             height="24px"
             viewBox="0 -960 960 960"
@@ -82,7 +83,7 @@
             />
           </svg>
           <svg
-            class="absolute left-[245px] bottom-[13px]"
+            class="absolute left-[220px] sm:left-[245px] bottom-[13px]"
             xmlns="http://www.w3.org/2000/svg"
             height="24px"
             viewBox="0 -960 960 960"
@@ -94,7 +95,7 @@
             />
           </svg>
           <svg
-            class="absolute left-[275px] bottom-[13px]"
+            class="absolute left-[260px] sm:left-[275px] bottom-[13px]"
             xmlns="http://www.w3.org/2000/svg"
             height="24px"
             viewBox="0 -960 960 960"
@@ -114,37 +115,80 @@
             I'm Felling Lucky
           </button>
         </div>
-        <div class="flex pt-4">
+        <div class="hidden sm:flex hidden-none pt-4">
           <img
             class="w-10 h-10"
             src="data:image/png;base64,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"
             alt="anlogo"
           />
-          <p class="text-[13px]">
+          <p class="text-[10px] sm:text-[13px]">
             It’s Safer Internet Day.
             <a href="" class="hover:underline decoration-1"
               >Learn new tips to help you stay safer from online scams</a
             >
           </p>
         </div>
-        <div class="pt-5">
-          <p class="text-[13px]">
-            Google offered in:
-            <a href="#" class="hover:underline decoration-1">हिन्दी</a>
+        <div class="pt-5 flex">
+          <div class="flex-auto space-x-2 ml-0 sm:ml-4 sm:flex">
+            <p class="text-[13px] hidden sm:block pr-2">Google offered in:</p>
+            <a href="#" class="hover:underline decoration-1 text-[13px]"
+              >हिन्दी</a
+            >
             &nbsp;
-            <a href="#" class="hover:underline decoration-1">বাংলা</a> &nbsp;
-            <a href="#" class="hover:underline decoration-1">తెలుగు</a> &nbsp;
-            <a href="#" class="hover:underline decoration-1">मराठी</a> &nbsp;
-            <a href="#" class="hover:underline decoration-1">தமிழ்</a> &nbsp;
-            <a href="#" class="hover:underline decoration-1">ગુજરાતી</a> &nbsp;
-            <a href="#" class="hover:underline decoration-1">ಕನ್ನಡ</a> &nbsp;
-            <a href="#" class="hover:underline decoration-1">മലയാളം</a> &nbsp;
-            <a href="#" class="hover:underline decoration-1">ਪੰਜਾਬੀ</a>
+            <a
+              href="#"
+              class="hover:underline decoration-1 text-[13px] font-normal"
+              >বাংলা</a
+            >
             &nbsp;
-          </p>
+            <a
+              href="#"
+              class="hover:underline decoration-1 text-[13px] font-normal"
+              >తెలుగు</a
+            >
+            &nbsp;
+            <a
+              href="#"
+              class="hover:underline decoration-1 text-[13px] font-normal"
+              >मराठी</a
+            >
+            &nbsp;
+            <a
+              href="#"
+              class="hover:underline decoration-1 text-[13px] font-normal"
+              >தமிழ்</a
+            >
+            &nbsp;
+            <a
+              href="#"
+              class="hover:underline decoration-1 text-[13px] font-normal"
+              >ગુજરાતી</a
+            >
+            &nbsp;
+            <a
+              href="#"
+              class="hover:underline decoration-1 text-[13px] font-normal"
+              >ಕನ್ನಡ</a
+            >
+            &nbsp;
+            <a
+              href="#"
+              class="hover:underline decoration-1 text-[13px] font-normal"
+              >മലയാളം</a
+            >
+            &nbsp;
+            <a
+              href="#"
+              class="hover:underline decoration-1 text-[13px] font-normal"
+              >ਪੰਜਾਬੀ</a
+            >
+            &nbsp;
+          </div>
         </div>
       </main>
-      <footer class="bg-[#F2F2F2] w-full h-auto flex flex-col mt-auto">
+      <footer
+        class="bg-[#F2F2F2] w-full my-auto flex flex-wrap flex-col mt-[220px] sm:mt-[169px]"
+      >
         <div class="p-5">India</div>
         <hr />
         <div class="flex justify-between mb-2">
