@@ -937,6 +937,10 @@ video {
   height: 100vh;
 }
 
+.h-\[20px\] {
+  height: 20px;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -1017,6 +1021,10 @@ video {
   width: 100%;
 }
 
+.w-\[20px\] {
+  width: 20px;
+}
+
 .max-w-\[650px\] {
   max-width: 650px;
 }
@@ -1071,6 +1079,10 @@ video {
 
 .gap-\[5px\] {
   gap: 5px;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .gap-x-\[20px\] {
