@@ -12,8 +12,54 @@
     <title>Microsoft</title>
   </head>
   <body>
-    <nav class="flex justify-between space-x-3 space-y-4 ml-[80px] mr-[70px]">
-      <div class="flex items-center space-x-[28px]">
+    <nav
+      class="flex justify-between space-x-3 ml-[10px] mr-[20px] lg:ml-[80px] lg:mr-[80px] my-2"
+    >
+      <div class="flex md:hidden w-full justify-between items-center">
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="18px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#000000"
+          >
+            <path
+              d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"
+            />
+          </svg>
+        </div>
+
+        <!-- Microsoft Logo (Centered) -->
+        <div class="flex-1 flex justify-center">
+          <img
+            class="w-[115px] h-[53px]"
+            src="/assets/forMicrosoftUI/microsoft-text.png"
+            alt="microsoftimage"
+          />
+        </div>
+
+        <div class="flex items-center space-x-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="18px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#000000"
+          >
+            <path
+              d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"
+            />
+          </svg>
+          <img
+            class="h-[30px] w-[30px] mb-[5px] hover:cursor-pointer"
+            src="/assets/forMicrosoftUI/download.svg"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="hidden md:flex items-center space-x-[28px]">
         <img
           class="w-[115px] h-[53px]"
           src="/assets/forMicrosoftUI/microsoft-text.png"
@@ -27,13 +73,13 @@
         </a>
         <a
           href="#"
-          class="hover:underline decoration-2 underline-offset-4 text-[13px] text-gray-500"
+          class="hidden xl:block hover:underline decoration-2 underline-offset-4 text-[13px] text-gray-500"
         >
           Teams
         </a>
         <a
           href="#"
-          class="hover:underline decoration-2 underline-offset-4 text-[13px] text-gray-500"
+          class="hidden lg:block hover:underline decoration-2 underline-offset-4 text-[13px] text-gray-500"
         >
           Copilot
         </a>
@@ -45,24 +91,32 @@
         </a>
         <a
           href="#"
-          class="hover:underline decoration-2 underline-offset-4 text-[13px] text-gray-500"
+          class="hidden lg:block hover:underline decoration-2 underline-offset-4 text-[13px] text-gray-500"
         >
           Surface
         </a>
         <a
           href="#"
-          class="hover:underline decoration-2 underline-offset-4 text-[13px] text-gray-500"
+          class="hidden xl:block hover:underline decoration-2 underline-offset-4 text-[13px] text-gray-500"
         >
           Xbox
         </a>
         <a
           href="#"
-          class="hover:underline decoration-2 underline-offset-4 text-[13px] text-gray-500"
+          class="hidden xl:block hover:underline decoration-2 underline-offset-4 text-[13px] text-gray-500"
         >
           Support
         </a>
+        <a
+          href="#"
+          class="hidden sm:block lg:hidden hover:underline decoration-2 underline-offset-4 text-[13px] text-gray-500"
+          >More
+          <select name="" id=""></select
+        ></a>
       </div>
-      <div class="flex space-x-[28px]">
+      <div
+        class="hidden md:flex space-x-[10px] 2xl:space-x-[28px] items-center mt-4"
+      >
         <a
           href=""
           class="text-[13px] text-gray-500 hover:underline decoration-2 underline-offset-2"
@@ -71,8 +125,9 @@
         </a>
         <a
           href=""
-          class="text-[13px] text-gray-500 hover:underline decoration-2 underline-offset-2"
-          >Search
+          class="text-[13px] text-gray-500 hover:underline decoration-2 underline-offset-2 inline-flex"
+        >
+          <span class="hidden 2xl:block">Search</span>
           <svg
             class="inline-flex"
             xmlns="http://www.w3.org/2000/svg"
@@ -88,8 +143,8 @@
         </a>
         <a
           href=""
-          class="text-[13px] text-gray-500 hover:underline decoration-2 underline-offset-2"
-          >Cart
+          class="text-[13px] text-gray-500 hover:underline decoration-2 underline-offset-2 inline-flex"
+          ><span class="hidden 2xl:block">Cart</span>
           <svg
             class="inline-flex"
             xmlns="http://www.w3.org/2000/svg"
@@ -103,9 +158,11 @@
             />
           </svg>
         </a>
-        <a href="" class="text-[13px] text-gray-500">Sign in </a>
+        <a href="" class="text-[13px] text-gray-500 inline-flex"
+          ><span class="hidden 2xl:block">Sign in</span>
+        </a>
         <img
-          class="h-[30px] w-[30px] hover:cursor-pointer"
+          class="h-[30px] w-[30px] mb-[5px] hover:cursor-pointer"
           src="/assets/forMicrosoftUI/download.svg"
           alt=""
         />
@@ -117,14 +174,14 @@
           class="hidden lg:flex flex-col justify-center h-[500px] w-1/2 bg-[#ACC6F9]"
         >
           <p class="ml-[120px] text-[38px]">Achieve the extraordinary</p>
-          <p class="ml-[120px] pt-[9px] text-[16px]">
+          <p class="ml-[120px] pt-[9px] text-[13px]">
             Microsoft 365 delivers cloud storage, security and Microsoft
           </p>
-          <p class="ml-[120px] text-[16px]">
+          <p class="ml-[120px] text-[13px]">
             Copilot in your favourite apps – all in one plan.
           </p>
           <button
-            class="w-[167px] h-[38px] bg-[#0067B8] text-[16px] text-white ml-[120px] mt-8"
+            class="w-[167px] h-[38px] bg-[#0067B8] text-[13px] text-white ml-[120px] mt-8"
           >
             Shop Microsoft 365
           </button>
@@ -193,7 +250,7 @@
               alt="microsoft"
             />
             <div
-              class="absolute text-[#056AB9] text-center text-[16px] underline right-1 whitespace-nowrap"
+              class="absolute text-[#056AB9] text-center text-[13px] underline right-1 whitespace-nowrap"
             >
               Choose your Microsoft 365
             </div>
@@ -204,7 +261,7 @@
               src="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/Link-List-Icons-Xbox-Games-Consoles?wid=40&hei=40"
               alt="xbox"
             />
-            <div class="text-[#056AB9] text-center text-[16px] underline">
+            <div class="text-[#056AB9] text-center text-[13px] underline">
               Shop Xbox
             </div>
           </div>
@@ -214,7 +271,7 @@
               src="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/Link-List-Icons-Microsoft-365?wid=40&hei=40"
               alt="microsoft"
             />
-            <div class="text-[#056AB9] text-center text-[16px] underline">
+            <div class="text-[#056AB9] text-center text-[13px] underline">
               Get Windows 11
             </div>
           </div>
@@ -224,7 +281,7 @@
               src="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/Link-List-Icons-Surface-Devices?wid=40&hei=40"
               alt="surface device"
             />
-            <div class="text-[#056AB9] text-center text-[16px] underline">
+            <div class="text-[#056AB9] text-center text-[13px] underline">
               Explore Surface devices
             </div>
           </div>
@@ -239,7 +296,7 @@
           <p class="pl-[24px] text-[29px] text-black font-semibold pt-[19px]">
             Surface Laptop, Copilot+ PC
           </p>
-          <p class="pl-[24px] pt-[13px] text-[16px] font-normal pr-[40px]">
+          <p class="pl-[24px] pt-[13px] text-[13px] font-normal pr-[40px]">
             Unlock AI features like Live Captions and Cocreator with this
             exceptionally powerful laptop.
           </p>
@@ -257,7 +314,7 @@
           <p class="pl-[24px] text-[29px] text-black font-semibold pt-[19px]">
             Xbox Series S
           </p>
-          <p class="pl-[24px] pt-[13px] text-[16px] font-normal pr-[40px]">
+          <p class="pl-[24px] pt-[13px] text-[13px] font-normal pr-[40px]">
             Next-gen performance in the smallest Xbox ever.
           </p>
           <button
@@ -274,7 +331,7 @@
           <p class="pl-[24px] text-[29px] text-black font-semibold pt-[19px]">
             Xbox Series X
           </p>
-          <p class="pl-[24px] pt-[13px] text-[16px] font-normal pr-[40px]">
+          <p class="pl-[24px] pt-[13px] text-[13px] font-normal pr-[40px]">
             Unlock AI features like Live Captions and Cocreator with this
             exceptionally powerful laptop.
           </p>
@@ -292,7 +349,7 @@
           <p class="pl-[24px] text-[29px] text-black font-semibold pt-[19px]">
             Game Pass
           </p>
-          <p class="pl-[24px] pt-[13px] text-[16px] font-normal pr-[40px]">
+          <p class="pl-[24px] pt-[13px] text-[13px] font-normal pr-[40px]">
             Unlock AI features like Live Captions and Cocreator with this
             exceptionally powerful laptop.
           </p>
@@ -322,7 +379,7 @@
               companion
             </p>
             <p
-              class="flex flex-wrap absolute top-[270px] left-[130px] text-[16px] font-normal pr-[30px]"
+              class="flex flex-wrap absolute top-[270px] left-[130px] text-[13px] font-normal pr-[30px]"
             >
               Always by your side, ready to support you whenever and wherever
               you need it.
@@ -346,7 +403,7 @@
           <p class="pl-[24px] text-[29px] text-black font-semibold pt-[19px]">
             Surface Pro for Business, Copilot+ PC (Intel)
           </p>
-          <p class="pl-[24px] pt-[13px] text-[16px] font-normal pr-[40px]">
+          <p class="pl-[24px] pt-[13px] text-[13px] font-normal pr-[40px]">
             Unlock AI features like Live Captions and Cocreator with this
             exceptionally powerful laptop.
           </p>
@@ -364,7 +421,7 @@
           <p class="pl-[24px] text-[29px] text-black font-semibold pt-[19px]">
             Surface Pro for Business, Copilot+ PC (Intel)
           </p>
-          <p class="pl-[24px] pt-[13px] text-[16px] font-normal pr-[40px]">
+          <p class="pl-[24px] pt-[13px] text-[13px] font-normal pr-[40px]">
             Unlock AI features like Live Captions and Cocreator with this
             exceptionally powerful laptop.
           </p>
@@ -382,7 +439,7 @@
           <p class="pl-[24px] text-[29px] text-black font-semibold pt-[19px]">
             Surface Pro for Business, Copilot+ PC (Intel)
           </p>
-          <p class="pl-[24px] pt-[13px] text-[16px] font-normal pr-[40px]">
+          <p class="pl-[24px] pt-[13px] text-[13px] font-normal pr-[40px]">
             Unlock AI features like Live Captions and Cocreator with this
             exceptionally powerful laptop.
           </p>
@@ -400,7 +457,7 @@
           <p class="pl-[24px] text-[29px] text-black font-semibold pt-[19px]">
             Surface Pro for Business, Copilot+ PC (Intel)
           </p>
-          <p class="pl-[24px] pt-[13px] text-[16px] font-normal pr-[40px]">
+          <p class="pl-[24px] pt-[13px] text-[13px] font-normal pr-[40px]">
             Unlock AI features like Live Captions and Cocreator with this
             exceptionally powerful laptop.
           </p>
@@ -452,7 +509,7 @@
         class="flex flex-wrap ml-[76px] mr-[76px] mt-[41px] justify-between gap-10"
       >
         <div class="mt-[24px] space-y-[14px]">
-          <p class="text-[#736161] text-[16px]">What's new</p>
+          <p class="text-[#736161] text-[13px]">What's new</p>
           <p class="text-[11px] hover:underline hover:cursor-pointer">
             Surface Pro
           </p>
@@ -473,7 +530,7 @@
           </p>
         </div>
         <div class="mt-[24px] space-y-[14px]">
-          <p class="text-[#736161] text-[16px]">Microsoft Store</p>
+          <p class="text-[#736161] text-[13px]">Microsoft Store</p>
           <p class="text-[11px] hover:underline hover:cursor-pointer">
             Account Profile
           </p>
@@ -491,7 +548,7 @@
           </p>
         </div>
         <div class="mt-[24px] space-y-[14px]">
-          <p class="text-[#736161] text-[16px]">Education</p>
+          <p class="text-[#736161] text-[13px]">Education</p>
           <p class="text-[11px] hover:underline hover:cursor-pointer">
             Microsoft in Education
           </p>
@@ -518,7 +575,7 @@
           </p>
         </div>
         <div class="mt-[24px] space-y-[14px]">
-          <p class="text-[#736161] text-[16px]">Business</p>
+          <p class="text-[#736161] text-[13px]">Business</p>
           <p class="text-[11px] hover:underline hover:cursor-pointer">
             Microsoft cloud
           </p>
@@ -543,7 +600,7 @@
           </p>
         </div>
         <div class="mt-[24px] space-y-[14px]">
-          <p class="text-[#736161] text-[16px]">Developer & IT</p>
+          <p class="text-[#736161] text-[13px]">Developer & IT</p>
           <p class="text-[11px] hover:underline hover:cursor-pointer">
             Microsoft Developer
           </p>
@@ -570,7 +627,7 @@
           </p>
         </div>
         <div class="mt-[24px] space-y-[14px]">
-          <p class="text-[#736161] text-[16px]">Company</p>
+          <p class="text-[#736161] text-[13px]">Company</p>
           <p class="text-[11px] hover:underline hover:cursor-pointer">
             Careers
           </p>
