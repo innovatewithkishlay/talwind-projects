@@ -5,6 +5,7 @@ module.exports = {
     "./Microsoft/ui.html",
     "./Instagram/ui.html",
     "./Classwork/ui.html",
+    "./Prac/ui.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
