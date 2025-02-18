@@ -113,7 +113,9 @@
     </nav>
     <body>
       <div class="flex">
-        <div class="flex flex-col justify-center h-[500px] w-1/2 bg-[#ACC6F9]">
+        <div
+          class="hidden lg:flex flex-col justify-center h-[500px] w-1/2 bg-[#ACC6F9]"
+        >
           <p class="ml-[120px] text-[38px]">Achieve the extraordinary</p>
           <p class="ml-[120px] pt-[9px] text-[16px]">
             Microsoft 365 delivers cloud storage, security and Microsoft
@@ -128,7 +130,7 @@
           </button>
         </div>
         <img
-          class="h-[500px] w-1/2"
+          class="h-[500px] w-full lg:w-1/2"
           src="/assets/forMicrosoftUI/mid.png"
           alt="midimage"
         />
@@ -181,7 +183,9 @@
         </svg>
       </div>
       <div class="flex flex-col">
-        <div class="flex justify-center space-x-[154px] mt-[92px]">
+        <div
+          class="flex flex-wrap justify-center space-x-[30px ] lg:space-x-[154px] mt-2 lg:mt-[92px]"
+        >
           <div class="relative">
             <img
               class="w-[40px] h-[40px]"
@@ -226,7 +230,7 @@
           </div>
         </div>
       </div>
-      <div class="flex m-[85px] space-x-[20px]">
+      <div class="flex flex-wrap gap-5 mt-[70px] mx-auto justify-center">
         <div class="border border-gray-200 w-[325px] h-[441px]">
           <img
             src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Surface-Laptop-AI-7Ed-Sapphire-MC001?wid=380&hei=213&fit=crop"
@@ -300,37 +304,39 @@
         </div>
       </div>
       <div>
-        <div class="relative w-[1370px] mt-[74px]">
+        <div class="relative mt-2 lg:mt-[74px]">
           <img
-            class="w-full h-[512px] m-[70px]"
-            src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Copilot-Native-App-ROW:VP5-1596x600"
+            class="w-auto lg:w-[1370px] h-auto lg:h-[512px] m-[70px]"
+            src="/assets/forMicrosoftUI/mid2.png"
             alt="Copilot"
           />
-          <p
-            class="absolute top-[150px] left-[130px] text-[37px] font-semibold"
-          >
-            Copilot is your AI
-          </p>
-          <p
-            class="absolute top-[200px] left-[130px] text-[37px] font-semibold"
-          >
-            companion
-          </p>
-          <p
-            class="absolute top-[270px] left-[130px] text-[16px] font-normal pr-[30px]"
-          >
-            Always by your side, ready to support you whenever and wherever you
-            need it.
-          </p>
-          <button
-            class="w-[218px] h-[40px] absolute top-[320px] bg-[#0067B8] text-white left-[130px]"
-          >
-            Download the Copilot App
-          </button>
+          <div class="hidden lg:block">
+            <p
+              class="absolute top-[150px] left-[130px] text-[37px] font-semibold"
+            >
+              Copilot is your AI
+            </p>
+            <p
+              class="absolute top-[200px] left-[130px] text-[37px] font-semibold"
+            >
+              companion
+            </p>
+            <p
+              class="flex flex-wrap absolute top-[270px] left-[130px] text-[16px] font-normal pr-[30px]"
+            >
+              Always by your side, ready to support you whenever and wherever
+              you need it.
+            </p>
+            <button
+              class="w-[218px] h-[40px] absolute top-[320px] bg-[#0067B8] text-white left-[130px]"
+            >
+              Download the Copilot App
+            </button>
+          </div>
         </div>
       </div>
       <p class="text-[37px] mt-[107px] font-semibold ml-[80px]">For Business</p>
-      <div class="flex ml-[74px] mr-[74px] space-x-[20px]">
+      <div class="flex flex-wrap ml-[74px] mr-0 lg:mr-[74px] gap-x-[20px]">
         <div class="border border-gray-200 w-[325px] h-[530px] mb-[124px]">
           <img
             src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Surface-Pro-AI-11Ed-Platinum-x86-001-COMMR?wid=380&hei=213&fit=crop"
@@ -441,7 +447,7 @@
         </button>
       </div>
     </body>
-    <footer class="h-full 2xl:h-[460px] w-full flex flex-col bg-[#F2F2F2]">
+    <footer class="h-full 2xl:h-[420px] w-full flex flex-col bg-[#F2F2F2]">
       <div
         class="flex flex-wrap ml-[76px] mr-[76px] mt-[41px] justify-between gap-10"
       >
@@ -592,7 +598,7 @@
         <div
           class="flex flex-col xl:flex-row flex-wrap items-center space-y-2 space-x-6"
         >
-          <div class="flex items-center gap-[5px]">
+          <div class="flex items-center pt-0 xl:pt-1 gap-[5px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24px"
@@ -634,7 +640,9 @@
             Consumer health Policy
           </p>
         </div>
-        <div class="flex flex-wrap ml-7 mt-[22px] mr-5 items-center space-x-6">
+        <div
+          class="flex flex-wrap ml-7 mt-[22px] mb-0 mr-5 items-center space-x-6"
+        >
           <p
             class="text-[11px] font-normal hover:cursor-pointer hover:underline"
           >
