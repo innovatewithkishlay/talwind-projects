@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="icon/image" href="/assets/lpu/lpu.png" />
+    <link href="../output.css" rel="stylesheet" />
+    <title>
+      UMS | Lovely Professional University | University Management System
+    </title>
+  </head>
+  <body>
+    <div class="flex w-full min-h-screen">
+      <div class="w-1/2">
+        <img src="/assets/lpu/imagelpu.jpg" alt="side image" />
+      </div>
+
+      <div class="w-1/2 bg-[#FBF1F1] flex flex-col">
+        <div
+          class="flex gap-[40px] justify-center items-center mt-[67px] relative z-20"
+        >
+          <img
+            class="h-[80px]"
+            src="https://ums.lpu.in/lpuums/assets/login/img/logos/seal.svg"
+            alt="lpu logo"
+          />
+          <img
+            class="h-[40px]"
+            src="https://ums.lpu.in/lpuums/assets/login/img/logos/ums_logo1.svg"
+            alt="written text"
+          />
+        </div>
+        <div
+          class="absolute h-[440px] w-[550px] flex flex-col bg-white rounded-md mx-[100px] my-[25px] mt-[200px]"
+        >
+          <div class="relative w-[400px] mx-[60px]">
+            <div class="text-[23px] mt-6 flex relative items-center">
+              Login
+              <select
+                class="w-[80%] h-[60px] ml-5 pl-4 pr-10 bg-[#FBF1F1] -top-3 rounded-md focus:outline-none"
+                name="HeadOffice"
+                id="HeadOffice"
+              >
+                <option value="" disabled selected>Head Office</option>
+                <option value="office1">Head Office</option>
+                <option value="branch1">India</option>
+                <option value="branch2">International</option>
+              </select>
+            </div>
+            <input
+              class="w-[400px] h-[60px] my-[20px] pl-4 bg-[#FBF1F1] rounded-md focus:outline-none"
+              type="text"
+              placeholder="User ID"
+            />
+            <svg
+              class="absolute right-4 top-[72%] transform -translate-y-1/2 cursor-pointer"
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#000000"
+            >
+              <path
+                d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"
+              />
+            </svg>
+          </div>
+          <div class="relative w-[400px] mx-[60px]">
+            <input
+              class="w-full h-[60px] pl-4 pr-10 bg-[#FBF1F1] rounded-md focus:outline-none"
+              type="password"
+              placeholder="Password"
+            />
+
+            <svg
+              class="absolute right-4 top-[50%] transform -translate-y-1/2 cursor-pointer"
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#000000"
+            >
+              <path
+                d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"
+              />
+            </svg>
+          </div>
+
+          <p class="hover:cursor-pointer ml-[300px] mt-2">
+            Forgot your password?
+          </p>
+
+          <button
+            class="bg-[#F78C30] w-[400px] h-[60px] text-white mx-[60px] my-[20px] text-center rounded-md"
+          >
+            Login
+          </button>
+        </div>
+        <div class="flex justify-center items-center gap-2 mt-[70px] mb-10">
+          <img
+            class="w-[40px]"
+            src="https://ums.lpu.in/lpuums/assets/login/img/mail-icon.svg"
+            alt="Email Icon"
+          />
+          <p class="text-gray-600 text-[15px] font-medium">Student mail</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

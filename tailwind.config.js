@@ -6,6 +6,8 @@ module.exports = {
     "./Instagram/ui.html",
     "./Classwork/ui.html",
     "./Prac/ui.html",
+    "./Lpu/ui.html",
+    "./Cocacola/ui.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
