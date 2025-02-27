@@ -9,6 +9,7 @@ module.exports = {
     "./Lpu/ui.html",
     "./Cocacola/ui.html",
     "./Pizzahut/ui.html",
+    "./Classca/ui.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
