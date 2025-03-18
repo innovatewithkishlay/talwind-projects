@@ -1,2 +1,2 @@
 npx tailwindcss -i ./input.css -o ./output.css --watch
-
+-->the above is the code for running the project
